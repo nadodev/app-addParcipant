@@ -6,6 +6,7 @@ import {
 } from "react-native";
 import React from "react";
 import { style } from "./style";
+import Participant from "../../components/Participant";
 
 export function Home() {
   function handleParticipantAdd() {
@@ -14,12 +15,13 @@ export function Home() {
 
   return (
     <View style={style.container}>
+       
       <View style={style.wrapper}>
         <Text style={style.textEvent}>Nome do Evento</Text>
 
         <Text style={style.textDate}>Sexta, 4 de Novembro de 2022.</Text>
 
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 15 }}>
+        <View style={style.form}>
           <TextInput
             style={style.input}
             placeholder="Nome do participante"
@@ -31,6 +33,8 @@ export function Home() {
           </TouchableOpacity>
         </View>
       </View>
+        <Participant />
+        <Participant />
     </View>
   );
 }

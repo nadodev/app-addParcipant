@@ -4,24 +4,33 @@ export const style = StyleSheet.create({
     container:{
         flex: 1,
         backgroundColor: '#121015',
-        
+        padding: 25
     },
-    wrapper: {
-        marginTop: 70,
-        padding: 15
 
+    wrapper: {
+        marginTop: 40,
+        
+
+    },
+
+    form: {
+        width: '100%',
+        flexDirection: "row",
+        alignItems: "center",
+        gap:25
     },
 
     textEvent: {
         color: '#FFF',
         fontSize: 20,
         fontWeight: 'bold',
-        marginBottom: 10
+        marginBottom: 20
     },
+
     textDate: {
         color: '#6B6B6B',
         fontSize: 16,
-        marginBottom: 10
+        marginBottom: 20
     },
     
     input : {
@@ -33,6 +42,7 @@ export const style = StyleSheet.create({
         flex: 1,
         fontSize: 15
     },
+
     button: {
         backgroundColor: '#31cf67',
         height: 56,
@@ -41,9 +51,11 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+
     textButton: {
         color: '#FFF',
         fontSize: 25,
         fontWeight: 'bold'
     }
+
 })
